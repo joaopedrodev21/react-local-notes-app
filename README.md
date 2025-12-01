@@ -1,4 +1,4 @@
-# 🚀 Anotações Instantâneas (ou o título que você escolheu)
+# 🚀 Anotações Instantâneas
 
 Uma aplicação de notas em tempo real desenvolvida com ReactJS, demonstrando o uso eficiente do Local Storage para persistência de dados (CRUD completo).
 
