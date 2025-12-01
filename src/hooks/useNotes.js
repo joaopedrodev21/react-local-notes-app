@@ -3,7 +3,10 @@ import {useState, useEffect, use} from 'react';
 const STORAGE_KEY = 'react-notes-app';
 
 function useNotes(){
-    const [notes, setNotes] = useState([]);
+    const [notes, setNotes] = useState(() => {
+        const storedNotes = localStorage.getItem(STORAGE_KEY);
+        return storedNotes ? JSON.parse(storedNotes) : [];
+    });
 
     useEffect(() =>{
         localStorage.setItem(STORAGE_KEY, JSON.stringify(notes));
